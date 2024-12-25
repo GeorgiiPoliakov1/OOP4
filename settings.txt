@@ -1,6 +1,6 @@
-s Shoot
-a Ability
-l Load
-v Save
-q Quit
-e NewGame
+s shoot
+a ability
+l load
+v save
+q quit
+e newGame

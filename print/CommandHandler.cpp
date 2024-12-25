@@ -30,17 +30,17 @@ bool CommandHandler::loadFile(const std::string &filePath)
             return false;
         }
         Command command;
-        if (commandName == "Shoot") {
+        if (commandName == "shoot") {
             command = Command::SHOOT;
-        } else if (commandName == "Ability") {
+        } else if (commandName == "ability") {
             command = Command::ABILITY;
-        } else if (commandName == "Save") {
+        } else if (commandName == "save") {
             command = Command::SAVEGAME;
-        } else if (commandName == "Load") {
+        } else if (commandName == "load") {
             command = Command::LOAD;
-        } else if (commandName == "Quit") {
+        } else if (commandName == "quit") {
             command = Command::QUIT;
-        }else if (commandName == "NewGame"){
+        }else if (commandName == "newGame"){
             command = Command::NEWGAME;
         }else {
             std::cerr << "Unknown command! " << commandName << std::endl;
@@ -66,17 +66,17 @@ std::string CommandHandler::turnCommandToString(Command command)
 {
     switch (command) {
         case SHOOT:
-            return "SHOOT";
+            return "shoot";
         case ABILITY:
-            return "ABILITY";
+            return "ability";
         case SAVEGAME:
-            return "SAVE";
+            return "save";
         case QUIT:
-            return "QUIT";
+            return "quit";
         case LOAD:
-            return "LOAD";
+            return "load";
         case NEWGAME:
-            return "START NEW GAME";
+            return "start new game";
         default:
             throw std::invalid_argument("Invalid command");
     }
