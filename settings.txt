@@ -1,0 +1,6 @@
+s Shoot
+a Ability
+l Load
+v Save
+q Quit
+e NewGame
